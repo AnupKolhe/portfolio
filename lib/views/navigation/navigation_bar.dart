@@ -15,7 +15,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          Row(),
+          Row(children: <Widget>[]),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
