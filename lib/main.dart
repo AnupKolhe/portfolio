@@ -1,4 +1,4 @@
-import 'package:anupkolhewebsite/pages/home_pages.dart';
+import 'package:anupkolhewebsite/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Anup Kolhe',
       theme: ThemeData.dark(),
-      home: const  HomePage(),
+      home: const HomePage(),
     );
   }
 }
