@@ -25,8 +25,9 @@ class MainDesktop extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              //Intro message
               const Text(
-                "Namaste, \nI am Anup Kolhe \nFlutter Developer",
+                "Namaste, \nI am Anup Kolhe \nA Flutter Developer",
                 style: TextStyle(
                   fontSize: 30.0,
                   height: 1.5,
@@ -37,6 +38,7 @@ class MainDesktop extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
+              // contact btn
               SizedBox(
                 width: 250,
                 child: ElevatedButton(
@@ -47,7 +49,7 @@ class MainDesktop extends StatelessWidget {
             ],
           ),
           Image.asset(
-            "assets/images/flutter_img.webp",
+            "assets/images/flutter_img.png",
             width: screenWidth / 2,
           ),
         ],
