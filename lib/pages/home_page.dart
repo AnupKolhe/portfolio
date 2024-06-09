@@ -1,3 +1,4 @@
+import 'package:anupkolhewebsite/constants/skill_items.dart';
 import 'package:flutter/material.dart';
 import '../constants/colors.dart';
 import '../constants/size.dart';
@@ -51,8 +52,42 @@ class _HomePageState extends State<HomePage> {
             //Skill
             Container(
               height: 500,
-              width: double.maxFinite,
+              width: screenWidth,
+              padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
               color: Colors.blueGrey,
+              child: Column(
+                children: [
+                  //title
+                  Text(
+                    "What I can do",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: CustomColor.whitePrimary,
+                    ),
+                  ),
+                  //platforms and skill
+                  Row(
+                    children: [
+                      Wrap(
+                        children: [
+                          for (int i = 0; i < platformItems.length; i++)
+                            Container(
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  color: CustomColor.bgLight2,
+                                  borderRadius: BorderRadius.circular(5)),
+                              child: ListTile(
+                                leading: Image.asset(platformItems[i]["img"]),
+                                title: Text(platformItems[i]["title"]),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             //Projects
             Container(
