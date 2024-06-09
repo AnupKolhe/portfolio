@@ -1,5 +1,7 @@
 import 'package:anupkolhewebsite/constants/skill_items.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import '../constants/colors.dart';
 import '../constants/size.dart';
 import '../widgets/drawer_mobile.dart';
@@ -7,6 +9,7 @@ import '../widgets/header_desktop.dart';
 import '../widgets/header_mobile.dart';
 import '../widgets/main_desktop.dart';
 import '../widgets/main_mobile.dart';
+import '../widgets/skills_desktop.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -54,8 +57,9 @@ class _HomePageState extends State<HomePage> {
               height: 500,
               width: screenWidth,
               padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-              color: Colors.blueGrey,
-              child: Column(
+              color: CustomColor.bgLight1,
+              child: const Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   //title
                   Text(
@@ -66,26 +70,11 @@ class _HomePageState extends State<HomePage> {
                       color: CustomColor.whitePrimary,
                     ),
                   ),
-                  //platforms and skill
-                  Row(
-                    children: [
-                      Wrap(
-                        children: [
-                          for (int i = 0; i < platformItems.length; i++)
-                            Container(
-                              width: 200,
-                              decoration: BoxDecoration(
-                                  color: CustomColor.bgLight2,
-                                  borderRadius: BorderRadius.circular(5)),
-                              child: ListTile(
-                                leading: Image.asset(platformItems[i]["img"]),
-                                title: Text(platformItems[i]["title"]),
-                              ),
-                            ),
-                        ],
-                      ),
-                    ],
+                  SizedBox(
+                    height: 50,
                   ),
+                  //platforms and skill
+                  SkillsDesktop(),
                 ],
               ),
             ),
