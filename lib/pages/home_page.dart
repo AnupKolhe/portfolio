@@ -42,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                   scaffoldKey.currentState?.openEndDrawer();
                 },
               ),
+
             if (constraints.maxWidth >= kMinDesktopWidth)
               const MainDesktop()
             else
