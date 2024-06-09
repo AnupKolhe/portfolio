@@ -10,6 +10,7 @@ class MainMobile extends StatelessWidget {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
     final screenHeight = screenSize.height;
+
     return Container(
       margin: const EdgeInsets.symmetric(
         horizontal: 40,
@@ -29,7 +30,10 @@ class MainMobile extends StatelessWidget {
               ]).createShader(bounds);
             },
             blendMode: BlendMode.srcATop,
-            child: Image.asset("assets/images/flutter_img.png"),
+            child: Image.asset(
+              "assets/images/flutter_img.png",
+              width: screenWidth,
+            ),
           ),
           const SizedBox(
             height: 30,
