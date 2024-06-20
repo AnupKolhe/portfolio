@@ -1,7 +1,6 @@
 import 'package:anupkolhewebsite/constants/skill_items.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:anupkolhewebsite/widgets/skill_mobile.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../constants/colors.dart';
 import '../constants/size.dart';
 import '../widgets/drawer_mobile.dart';
@@ -58,11 +57,11 @@ class _HomePageState extends State<HomePage> {
               width: screenWidth,
               padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
               color: CustomColor.bgLight1,
-              child: const Column(
+              child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   //title
-                  Text(
+                  const Text(
                     "What I can do",
                     style: TextStyle(
                       fontSize: 24,
@@ -70,11 +69,14 @@ class _HomePageState extends State<HomePage> {
                       color: CustomColor.whitePrimary,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   //platforms and skill
-                  SkillsDesktop(),
+                  if (constraints.maxHeight >= kMedDesktopWidth)
+                    const SkillsDesktop()
+                  else
+                    const SkillsMobile(),
                 ],
               ),
             ),
