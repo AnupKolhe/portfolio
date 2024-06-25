@@ -12,8 +12,11 @@ class SkillsDesktop extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        // Platforms
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 450),
+          constraints: const BoxConstraints(
+            maxWidth: 450,
+          ),
           child: Wrap(
             spacing: 5.0,
             runSpacing: 5.0,
@@ -22,16 +25,23 @@ class SkillsDesktop extends StatelessWidget {
                 Container(
                   width: 200,
                   decoration: BoxDecoration(
-                      color: CustomColor.bgLight2,
-                      borderRadius: BorderRadius.circular(5)),
+                    color: CustomColor.bgLight2,
+                    borderRadius: BorderRadius.circular(
+                      5.0,
+                    ),
+                  ),
                   child: ListTile(
                     contentPadding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
+                      horizontal: 20.0,
+                      vertical: 10.0,
+                    ),
                     leading: Image.asset(
                       platformItems[i]["img"],
-                      width: 26,
+                      width: 26.0,
                     ),
-                    title: Text(platformItems[i]["title"]),
+                    title: Text(
+                      platformItems[i]["title"],
+                    ),
                   ),
                 ),
             ],
@@ -60,12 +70,14 @@ class SkillsDesktop extends StatelessWidget {
                     label: Text(
                       skillItems[i]["title"],
                     ),
-                    avatar: Image.asset(skillItems[i]["img"]),
+                    avatar: Image.asset(
+                      skillItems[i]["img"],
+                    ),
                   ),
               ],
             ),
           ),
-        )
+        ),
       ],
     );
   }
