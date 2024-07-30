@@ -17,7 +17,6 @@ class SkillsMobile extends StatelessWidget {
           //platform
           for (int i = 0; i < platformItems.length; i++)
             Container(
-              // width: 200,
               width: double.maxFinite,
               margin: const EdgeInsets.only(
                 bottom: 5.0,
@@ -28,8 +27,8 @@ class SkillsMobile extends StatelessWidget {
               ),
               child: ListTile(
                 contentPadding: const EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 20,
+                  vertical: 10.0,
+                  horizontal: 20.0,
                 ),
                 leading: Image.asset(
                   platformItems[i]["img"],
@@ -40,7 +39,9 @@ class SkillsMobile extends StatelessWidget {
                 ),
               ),
             ),
-
+          const SizedBox(
+            height: 50,
+          ),
           // skill
           Wrap(
             spacing: 10.0,

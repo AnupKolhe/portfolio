@@ -1,4 +1,3 @@
-import 'package:anupkolhewebsite/constants/skill_items.dart';
 import 'package:anupkolhewebsite/widgets/skill_mobile.dart';
 import 'package:flutter/material.dart';
 import '../constants/colors.dart';
@@ -69,9 +68,7 @@ class _HomePageState extends State<HomePage> {
                       color: CustomColor.whitePrimary,
                     ),
                   ),
-                  const SizedBox(
-                    height: 50,
-                  ),
+                  const SizedBox(height: 50),
                   //platforms and skill
                   if (constraints.maxHeight >= kMedDesktopWidth)
                     const SkillsDesktop()
@@ -82,9 +79,22 @@ class _HomePageState extends State<HomePage> {
             ),
             //Projects
             Container(
-              height: 500,
+              padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
               width: double.maxFinite,
-              color: Colors.blueGrey,
+              child: Column(
+                children: [
+                  // Work Project Title
+                  const Text(
+                    "What I can do",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: CustomColor.whitePrimary,
+                    ),
+                  ),
+                  // Work Project Cards
+                ],
+              ),
             ),
             //Contact
             Container(
