@@ -81,10 +81,10 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
               width: double.maxFinite,
-              child: Column(
+              child: const Column(
                 children: [
                   // Work Project Title
-                  const Text(
+                  Text(
                     "What I can do",
                     style: TextStyle(
                       fontSize: 24,
