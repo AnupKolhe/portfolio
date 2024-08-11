@@ -1,5 +1,8 @@
+import 'package:anupkolhewebsite/utils/project_utils.dart';
 import 'package:anupkolhewebsite/widgets/skill_mobile.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import '../constants/colors.dart';
 import '../constants/size.dart';
 import '../widgets/drawer_mobile.dart';
@@ -7,6 +10,8 @@ import '../widgets/header_desktop.dart';
 import '../widgets/header_mobile.dart';
 import '../widgets/main_desktop.dart';
 import '../widgets/main_mobile.dart';
+import '../widgets/project_card.dart';
+import '../widgets/projects_section.dart';
 import '../widgets/skills_desktop.dart';
 
 class HomePage extends StatefulWidget {
@@ -50,7 +55,7 @@ class _HomePageState extends State<HomePage> {
             else
               const MainMobile(),
 
-            //Skill
+            // Skill
             Container(
               height: 500,
               width: screenWidth,
@@ -77,25 +82,10 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+
             //Projects
-            Container(
-              padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-              width: double.maxFinite,
-              child: const Column(
-                children: [
-                  // Work Project Title
-                  Text(
-                    "What I can do",
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: CustomColor.whitePrimary,
-                    ),
-                  ),
-                  // Work Project Cards
-                ],
-              ),
-            ),
+            const ProjectsSection(),
+
             //Contact
             Container(
               height: 500,

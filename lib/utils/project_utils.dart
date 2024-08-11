@@ -25,20 +25,51 @@ List<ProjectUtils> hobbyProjectUtils = [
     title: 'hobby',
     subtitle: 'hobby',
     descrpition: 'hobby',
-    applink: 'hobby',
-    weblink: 'hobby',
-    ioslink: 'hobby',
-  )
+    applink: null,
+    weblink: null,
+    ioslink: null,
+  ),
+  ProjectUtils(
+    image: 'hobby',
+    title: 'hobby 1',
+    subtitle: 'hobby 1',
+    descrpition: 'hobby 1',
+    applink: null,
+    weblink: null,
+    ioslink: null,
+  ),
 ];
 // Hobby Project
 List<ProjectUtils> workProjectUtils = [
   ProjectUtils(
-    image: 'work',
-    title: 'work',
-    subtitle: 'work',
-    descrpition: 'work',
-    applink: 'work',
-    weblink: 'work',
-    ioslink: 'work',
+    image: 'assets/projects/image.png',
+    title: 'Website',
+    subtitle: 'Complete Website which was build in Flutter',
+    descrpition: 'I have completed build website which is Completed Flutter',
+    applink: null,
+    weblink: 'https://anupkolhe.co.in/',
+    ioslink: null,
+  ),
+  // /*
+  // NSE  Project Link
+  ProjectUtils(
+    image: 'assets/projects/image.png', //NSE
+    title: 'NSE',
+    subtitle: 'NSE',
+    descrpition: 'NSE',
+    applink: null,
+    weblink: 'NSE',
+    ioslink: null,
+  ),
+  /*// My Major Flutter using NLP 
+  ProjectUtils(
+    image: 'assets/projects/image.png', //NLP
+    title: 'NSE', //NLP
+    subtitle: 'NSE', //NLP
+    descrpition: 'NSE', //NLP
+    applink: '', //NLP
+    weblink: 'NSE', //NLP
+    ioslink: '', //NLP
   )
+  */
 ];
