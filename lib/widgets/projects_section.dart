@@ -44,6 +44,7 @@ class ProjectsSection extends StatelessWidget {
             height: 80,
           ),
           // Hobby Project Title
+          /*
           const Text(
             "Hobby Projects",
             style: TextStyle(
@@ -66,7 +67,7 @@ class ProjectsSection extends StatelessWidget {
                   ),
               ],
             ),
-          )
+          )*/
         ],
       ),
     );
