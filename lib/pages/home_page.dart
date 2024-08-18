@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_web_libraries_in_flutter
+
 import 'package:anupkolhewebsite/widgets/skill_mobile.dart';
 import 'package:flutter/material.dart';
 import '../constants/colors.dart';
@@ -29,7 +31,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final screenWidth = screenSize.width;
-    final screenHeight = screenSize.height;
 
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
@@ -72,7 +73,6 @@ class _HomePageState extends State<HomePage> {
               // Skill
               Container(
                 key: navbarKeys[1],
-                height: 500,
                 width: screenWidth,
                 padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
                 color: CustomColor.bgLight1,

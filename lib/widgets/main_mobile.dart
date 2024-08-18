@@ -55,7 +55,7 @@ class MainMobile extends StatelessWidget {
             width: 190,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text('Get in Touch'),
+              child: const Text('Get my CV'),
             ),
           ),
           //Btn

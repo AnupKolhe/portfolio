@@ -1,3 +1,4 @@
+import 'package:anupkolhewebsite/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class SiteLogo extends StatelessWidget {
@@ -17,6 +18,7 @@ class SiteLogo extends StatelessWidget {
           fontSize: 22,
           fontWeight: FontWeight.bold,
           decoration: TextDecoration.underline,
+          color: CustomColor.yellowSecondary,
         ),
       ),
     );
