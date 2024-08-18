@@ -137,7 +137,38 @@ class _HomePageState extends State<HomePage> {
                         child: const Text("Get in Touch"),
                       ),
                     ),
-                  )
+                  ),
+                  const SizedBox(height: 30),
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      maxWidth: 300,
+                    ),
+                    child: const Divider(),
+                  ),
+                  const SizedBox(height: 15),
+
+                  // SNS Icon Button Links
+                  Wrap(
+                    spacing: 12, runSpacing: 12,
+                    alignment: WrapAlignment.center,
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: Image.asset(
+                          "assets/images/github.png",
+                          width: 28,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {},
+                        child: Image.asset(
+                          "assets/images/linkedin.png",
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                    // children: [Image.asset("assets/images/github.png")],
+                  ),
                 ],
               ),
             ),
