@@ -2,8 +2,8 @@ import 'package:anupkolhewebsite/constants/nav_bar.dart';
 import 'package:anupkolhewebsite/widgets/site_logo.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
-import '../styles/style.dart';
+import '../../../constants/colors.dart';
+import '../../../styles/style.dart';
 
 class HeaderDesktop extends StatelessWidget {
   const HeaderDesktop({

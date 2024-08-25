@@ -1,7 +1,7 @@
 import 'package:anupkolhewebsite/utils/project_utils.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
+import '../../../constants/colors.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:js' as js;
 

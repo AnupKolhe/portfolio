@@ -1,7 +1,7 @@
 import 'package:anupkolhewebsite/widgets/site_logo.dart';
 import 'package:flutter/material.dart';
 
-import '../styles/style.dart';
+import '../../../styles/style.dart';
 
 class HeaderMobile extends StatelessWidget {
   const HeaderMobile({super.key, this.onLogoTap, this.onMenuTap});

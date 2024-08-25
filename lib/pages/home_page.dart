@@ -1,18 +1,18 @@
 // ignore_for_file: avoid_web_libraries_in_flutter
 
-import 'package:anupkolhewebsite/widgets/skill_mobile.dart';
+import 'package:anupkolhewebsite/widgets/View/Skills/skill_mobile.dart';
 import 'package:flutter/material.dart';
 import '../constants/colors.dart';
 import '../constants/size.dart';
 import '../widgets/contact_section.dart';
 import '../widgets/drawer_mobile.dart';
 import '../widgets/footer.dart';
-import '../widgets/header_desktop.dart';
-import '../widgets/header_mobile.dart';
-import '../widgets/main_desktop.dart';
-import '../widgets/main_mobile.dart';
-import '../widgets/projects_section.dart';
-import '../widgets/skills_desktop.dart';
+import '../widgets/View/Header/header_desktop.dart';
+import '../widgets/View/Header/header_mobile.dart';
+import '../widgets/View/MainView/main_desktop.dart';
+import '../widgets/View/MainView/main_mobile.dart';
+import '../widgets/View/Project/projects_section.dart';
+import '../widgets/View/Skills/skills_desktop.dart';
 import 'dart:js' as js;
 
 class HomePage extends StatefulWidget {

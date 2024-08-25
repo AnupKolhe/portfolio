@@ -53,12 +53,13 @@ List<ProjectUtils> workProjectUtils = [
   // /*
   // NSE  Project Link
   ProjectUtils(
-    image: 'assets/projects/image.png', //NSE
-    title: 'NSE',
-    subtitle: 'NSE',
-    descrpition: 'NSE',
+    image: 'assets/projects/nse_logo.png', //NSE
+    title: 'National Stock Exchange of India',
+    subtitle: 'Real-time Stock Market Viewer for NSE',
+    descrpition:
+        'A Flutter-powered web app providing real-time stock data from the National Stock Exchange of India. Users can track live market trends, view stock performance, and analyze data. Designed for a seamless and responsive experience across platforms.',
     applink: null,
-    weblink: 'NSE',
+    weblink: 'https://charting.nseindia.com/?symbol=TATACONSUM-EQ',
     ioslink: null,
   ),
   /*// My Major Flutter using NLP 

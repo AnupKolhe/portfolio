@@ -1,8 +1,8 @@
-import 'package:anupkolhewebsite/widgets/project_card.dart';
+import 'package:anupkolhewebsite/widgets/View/Project/project_card.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
-import '../utils/project_utils.dart';
+import '../../../constants/colors.dart';
+import '../../../utils/project_utils.dart';
 
 class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
