@@ -6,16 +6,17 @@ class ProjectUtils {
   final String? weblink;
   final String? applink;
   final String? ioslink;
+  final String? github;
 
-  ProjectUtils({
-    required this.image,
-    required this.title,
-    required this.subtitle,
-    required this.descrpition,
-    this.weblink,
-    this.applink,
-    this.ioslink,
-  });
+  ProjectUtils(
+      {required this.image,
+      required this.title,
+      required this.subtitle,
+      required this.descrpition,
+      this.weblink,
+      this.applink,
+      this.ioslink,
+      this.github});
 }
 
 // Hobby Project
@@ -42,13 +43,14 @@ List<ProjectUtils> hobbyProjectUtils = [
 // Hobby Project
 List<ProjectUtils> workProjectUtils = [
   ProjectUtils(
-    image: 'assets/projects/image.png',
+    image: 'assets/projects/flutter.png', // Main
     title: 'Website',
     subtitle: 'Complete Website which was build in Flutter',
     descrpition: 'I have completed build website which is Completed Flutter',
     applink: null,
     weblink: 'https://anupkolhe.co.in/',
     ioslink: null,
+    github: 'https://github.com/AnupKolhe/portfolio',
   ),
   // /*
   // NSE  Project Link

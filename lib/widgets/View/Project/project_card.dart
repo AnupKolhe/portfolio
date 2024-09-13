@@ -103,7 +103,20 @@ class ProjectCardWidget extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.only(left: 6.0),
                       child: Image.asset(
-                        'assets/images/web_icon.png', // Add Git Hub Link
+                        'assets/images/web_icon.png',
+                        width: 17,
+                      ),
+                    ),
+                  ),
+                if (project.github != null)
+                  InkWell(
+                    onTap: () {
+                      js.context.callMethod("open", [project.github]);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 6.0),
+                      child: Image.asset(
+                        'assets/images/gitHub.png', // Add Git Hub Link
                         width: 17,
                       ),
                     ),
