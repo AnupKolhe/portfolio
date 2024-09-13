@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
 
 import '../../../constants/colors.dart';
 
 class MainMobile extends StatelessWidget {
   const MainMobile({super.key});
+
+  Future<Uint8List> _loadPdfFromAssets() async {
+    final ByteData pdfData = await rootBundle.load('assets/pdf/AnupKolhe.pdf');
+    return pdfData.buffer.asUint8List();
+  }
+
+  void _downloadPdf(Uint8List pdfData) {
+    final blob = html.Blob([pdfData], 'application/pdf');
+    final url = html.Url.createObjectUrl(blob);
+    // ignore: unused_local_variable
+    final anchor = html.AnchorElement(href: url)
+      ..setAttribute("download", "AnupKolhe.pdf")
+      ..click();
+    html.Url.revokeObjectUrl(url);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +72,10 @@ class MainMobile extends StatelessWidget {
           SizedBox(
             width: 190,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () async {
+                final pdfData = await _loadPdfFromAssets();
+                _downloadPdf(pdfData);
+              },
               child: const Text('Get my CV'),
             ),
           ),
